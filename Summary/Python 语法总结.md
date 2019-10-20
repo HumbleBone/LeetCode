@@ -28,7 +28,7 @@ np.random.seed()
 
 **特殊用法**：mat (or array).reshape(c, -1);  必须是矩阵格式或者数组格式，才能使用 .reshape(c, -1) 函数， 表示将此矩阵或者数组重组，以 c行d列的形式表示（-1的作用就在此，自动计算d：d=数组或者矩阵里面所有的元素个数/c, d必须是整数，不然报错）（reshape(-1, e)即列数固定，行数需要计算）：
 
-### 4.  numpy.squeeze(a,axis = None) 
+### 4. numpy.squeeze(a,axis = None) 
 
 > 1）a表示输入的数组；
 > 2）axis用于指定需要删除的维度，但是指定的维度必须为单维度，否则将会报错；
@@ -40,7 +40,7 @@ np.random.seed()
 
 场景：在机器学习和深度学习中，通常算法的结果是可以表示向量的数组（即包含两对或以上的方括号形式[[]]），如果直接利用这个数组进行画图可能显示界面为空。我们可以利用squeeze（）函数将表示向量的数组转换为秩为1的数组，这样利用matplotlib库函数画图时，就可以正常的显示结果了。
 
-### 5.  print的几种用法
+### 5. print的几种用法
 
 #### 用法一
 
@@ -69,5 +69,24 @@ iteration = 100
 print("Accuacy for {} iteraitons is {} %" .format(iteration, accuacy))
 
 >>> Accuacy for 100 iterations is 90.456 %
+```
+
+### 6. lambda用法
+
+```
+lambda arguments1, arguments2: expression
+
+# 单个参数
+lambda x: x**2
+
+# 多个参数
+lambda x, y, z : x+y+z
+```
+
+和python的排序函数结合使用
+
+```
+# 根据等式的大小对序列进行排序
+points.sort(key=lambda x: x**2)
 ```
 
