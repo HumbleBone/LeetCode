@@ -90,3 +90,48 @@ lambda x, y, z : x+y+z
 points.sort(key=lambda x: x**2)
 ```
 
+### 7. 二维数组遍历
+
+#### 方式一：获取列表维度索引
+
+```python
+list2d = [[1,2,3],[4,5,6]]
+sum = 0
+for i in range(len(list2d)):
+    for j in range(len(list2d[0])):
+        sum += list2d[i][j]
+print(sum)
+```
+
+评价：这种方式不好， 利用行列下标索引方式,则必须要求，每行的列数相同，容易出现数组索引的报错问题。
+
+例如：
+
+```python
+list2d = [[1,2,3],[4,5]]
+sum = 0
+for i in list2d:
+    for j in i:
+        sum += j
+print(sum)
+```
+
+出现报错： 因为得到列数为3，在第二行时就会超出索引。
+
+```python
+IndexError: list index out of range
+```
+
+#### 方式二：利用列表句柄
+
+```python
+list2d = [[1,2,3],[4,5]]
+sum = 0
+for i in list2d:
+    for j in i:
+        sum += j
+print(sum)
+```
+
+
+
