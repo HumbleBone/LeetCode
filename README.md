@@ -17,7 +17,9 @@
 
 [1] [Python实现数据结构和算法](https://github.com/TheAlgorithms/Python)
 
-[2] [图论的一些教程](https://www.hackerearth.com/zh/practice/algorithms/graphs/minimum-spanning-tree/tutorial/)
+[2] [背包九讲](https://github.com/tianyicui/pack)
+
+[3] [图论的一些教程](https://www.hackerearth.com/zh/practice/algorithms/graphs/minimum-spanning-tree/tutorial/)
 
 ### 计划
 
